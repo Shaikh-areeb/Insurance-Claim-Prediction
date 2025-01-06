@@ -1,4 +1,5 @@
 # Claim Status Prediction Project
+![image](https://github.com/Shaikh-areeb/Insurance-Claim-Prediction/blob/main/Images/Motor%20Insurance.jpeg)
 
 ## Overview
 
