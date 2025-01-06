@@ -124,9 +124,9 @@ Used classification reports to evaluate model performance, focusing on:
   Balanced performance across both classes.
 - Weighted Average:
   Weighted by class support, these averages reflect the dominance of Class 0 in the dataset
-**- Precision: 0.99**
-**- Recall: 0.97**
-**- F1-Score: 0.98**
+**Precision: 0.99**
+**Recall: 0.97**
+**F1-Score: 0.98**
 
 # Key Insights
 
