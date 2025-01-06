@@ -1,5 +1,6 @@
 # Claim Status Prediction Project
 ![image](https://github.com/Shaikh-areeb/Insurance-Claim-Prediction/blob/main/Images/rb_22825.png)
+<img src = "https://github.com/Shaikh-areeb/Insurance-Claim-Prediction/blob/main/Images/rb_22825.png" height = "600"/> 
 
 ## Overview
 
