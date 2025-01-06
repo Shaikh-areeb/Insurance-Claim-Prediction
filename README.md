@@ -141,4 +141,10 @@ Precision for the minority class is lower (0.71), indicating false positives.
 
 High accuracy is driven by the majority class, which may mask issues with minority class predictions.
 
+# Conclusion
+
+The Random Forest model successfully predicted insurance claims with 97% accuracy on imbalanced data, achieving excellent recall (1.00) for claims.
+Despite the strong performance, precision for claims (class 1) was lower (0.71), indicating some false positives. 
+By applying oversampling to balance the data, the model showed near-perfect results on the training data, proving its potential for future improvements. 
+
 
