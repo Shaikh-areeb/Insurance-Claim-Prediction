@@ -21,96 +21,93 @@ The primary challenge is to handle the class imbalance between claims (minority 
 
 **Target Variable:**
 
-- claim_status: Binary classification:
+claim_status: Binary classification:
 
 - 0: No claim.
 
 - 1: Claim.
 
-Key Challenges:
+# Key Challenges:
 
-Class Imbalance:
+**Class Imbalance:**
 
-Majority class (claim_status = 0): 54844 samples.
+- Majority class (claim_status = 0): 54844 samples.
 
-Minority class (claim_status = 1): 3748 samples.
+- Minority class (claim_status = 1): 3748 samples.
 
-Approach
+# Approach
 
-Data Preprocessing:
+**Data Preprocessing:**
 
-Extracted relevant features and the target variable from the dataset.
+- Exploratory Data Analysis
 
-Applied label encoding to transform categorical variables into numeric format for compatibility with machine learning algorithms.
+- Extracted relevant features and the target variable from the dataset.
 
-Handling Imbalance:
+- Applied label encoding to transform categorical variables into numeric format for compatibility with machine learning algorithms.
 
-Used oversampling (e.g., SMOTE or similar techniques) on the training data to balance the classes and improve minority class representation.
+**Handling Imbalance:**
 
-Model Training:
+Used oversampling (resample) on the training data to balance the classes and improve minority class representation.
+
+**Model Training:**
 
 Built and trained several models, including:
 
-Random Forest
-
-Decision Tree
-
-XGBoost (XGB)
+1) Random Forest
+2) Decision Tree
+3) XGBoost (XGB)
 
 Selected Random Forest as the best model based on its consistent performance across training and test datasets.
 
-Evaluation Metrics:
+**Evaluation Metrics:**
 
 Used classification reports to evaluate model performance, focusing on:
 
-Precision
+- Precision
+- Recall
+- F1-Score
+- Overall Accuracy
 
-Recall
+# Key Results
 
-F1-Score
+**Random Forest Performance**
 
-Overall Accuracy
+- OverSampled Training Data :
+  
+| Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| 0              | 1.00      | 0.98   | 0.99     | 38270   |
+| 1              | 0.98      | 1.00   | 0.99     | 38511   |
+| **Accuracy**   |           |        | 0.99     | 76781   |
+| **Macro Avg**  | 0.99      | 0.99   | 0.99     | 76781   |
+| **Weighted Avg** | 0.99    | 0.99   | 0.99     | 76781   |
 
-Key Results
 
-Random Forest Performance
+- OverSampled Test Data:
 
-Training Data:
+  | Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| 0              | 1.00      | 0.94   | 0.97     | 16574   |
+| 1              | 0.95      | 1.00   | 0.97     | 16333   |
+| **Accuracy**   |           |        | 0.97     | 32907   |
+| **Macro Avg**  | 0.97      | 0.97   | 0.97     | 32907   |
+| **Weighted Avg** | 0.97    | 0.97   | 0.97     | 32907   |
 
-Accuracy: 99%
+- Classification Report Of Orignal Imbalanced Dataset
+  
+| Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| 0              | 1.00      | 0.97   | 0.99     | 54844   |
+| 1              | 0.71      | 1.00   | 0.83     | 3748    |
+| **Accuracy**   |           |        | 0.97     | 58592   |
+| **Macro Avg**  | 0.86      | 0.99   | 0.91     | 58592   |
+| **Weighted Avg** | 0.98    | 0.97   | 0.98     | 58592   |
 
-Balanced metrics for both classes (f1-score: ~0.99).
 
-Test Data:
-
-Accuracy: 97%
-
-High recall for claims (1.00), but slightly lower precision (0.71).
-
-Weighted average metrics remain strong (precision: 0.98, f1-score: 0.98).
-
-Improvements from Oversampling:
-
-Minority class (claim_status = 1) recall improved to 1.00, ensuring no claims are missed.
-
-Challenges and Improvements
-
-Challenges:
+# Challenges
 
 Precision for the minority class is lower (0.71), indicating false positives.
 
 High accuracy is driven by the majority class, which may mask issues with minority class predictions.
 
-Potential Improvements:
 
-Threshold Tuning:
-
-Adjust prediction thresholds to balance precision and recall for claims.
-
-Cost-Sensitive Learning:
-
-Assign higher misclassification costs to the minority class to reduce false positives.
-
-Feature Engineering:
-
-Add new features or refine existing ones to improve model differentiation between classes.
