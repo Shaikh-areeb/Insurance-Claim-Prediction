@@ -1,4 +1,4 @@
-# Claim Status Prediction Project
+# Insurance Claim Status Prediction Project
 
 ![image](https://github.com/Shaikh-areeb/Insurance-Claim-Prediction/blob/main/Images/car%20insurance.jpg)
 
