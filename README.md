@@ -93,6 +93,12 @@ Used classification reports to evaluate model performance, focusing on:
 | **Macro Avg**  | 0.97      | 0.97   | 0.97     | 32907   |
 | **Weighted Avg** | 0.97    | 0.97   | 0.97     | 32907   |
 
+- **Train Performance:** Extremely high metrics across the board (precision, recall, f1-score = 0.99), indicating very strong performance and near-perfect predictions.
+
+- **Test Performance:** Slight drop in recall for class 0 (0.94), but overall, the performance is still very high with accuracy and f1-score = 0.97. This suggests the model generalizes well with only slight overfitting.
+
+- **Conclusion:** Random Forest shows robust and consistent performance for both training and test datasets, making it the strongest candidate for the problem.
+
 - Classification Report Of Orignal Imbalanced Dataset
   
 | Class          | Precision | Recall | F1-Score | Support |
@@ -102,6 +108,29 @@ Used classification reports to evaluate model performance, focusing on:
 | **Accuracy**   |           |        | 0.97     | 58592   |
 | **Macro Avg**  | 0.86      | 0.99   | 0.91     | 58592   |
 | **Weighted Avg** | 0.98    | 0.97   | 0.98     | 58592   |
+
+**Overall Metrics:**
+
+- Accuracy: 0.97
+  The model correctly predicts 97% of all cases in the dataset.
+- Macro Average:
+  Precision: 0.86
+  Average precision across both classes. Lowered due to Class 1's precision.
+- Recall: 0.99
+  High recall as both classes have strong recall values.
+- F1-Score: 0.91
+  Balanced performance across both classes.
+- Weighted Average:
+  Weighted by class support, these averages reflect the dominance of Class 0 in the dataset:
+**- Precision: 0.98**
+**- Recall: 0.97**
+**- F1-Score: 0.98**
+
+# Key Insights
+
+- The model performs exceptionally well for the majority class (Class 0), with near-perfect precision and recall.
+- For the minority class (Class 1), recall is excellent (1.00), but precision is lower (0.71), meaning there are false positives for claims.
+- The overall accuracy of 97% reflects strong model performance, though this is influenced by the class imbalance.
 
 
 # Challenges
