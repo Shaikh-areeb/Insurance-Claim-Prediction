@@ -68,7 +68,7 @@ Used classification reports to evaluate model performance, focusing on:
 - F1-Score
 - Overall Accuracy
 
-# Key Results
+# Key Results On OverSampled Data
 
 **Random Forest Performance**
 
@@ -99,6 +99,8 @@ Used classification reports to evaluate model performance, focusing on:
 
 - **Conclusion:** Random Forest shows robust and consistent performance for both training and test datasets, making it the strongest candidate for the problem.
 
+# Key Results On Orignal Imbalaced Data
+
 - Classification Report Of Orignal Imbalanced Dataset
   
 | Class          | Precision | Recall | F1-Score | Support |
@@ -121,8 +123,8 @@ Used classification reports to evaluate model performance, focusing on:
 - F1-Score: 0.91
   Balanced performance across both classes.
 - Weighted Average:
-  Weighted by class support, these averages reflect the dominance of Class 0 in the dataset:
-**- Precision: 0.98**
+  Weighted by class support, these averages reflect the dominance of Class 0 in the dataset
+**- Precision: 0.99**
 **- Recall: 0.97**
 **- F1-Score: 0.98**
 
