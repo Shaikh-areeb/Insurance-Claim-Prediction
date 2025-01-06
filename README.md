@@ -47,7 +47,7 @@ claim_status: Binary classification:
 
 **Handling Imbalance:**
 
-Used oversampling (resample) on the training data to balance the classes and improve minority class representation.
+- Used oversampling (resample) on the training data to balance the classes and improve minority class representation.
 
 **Model Training:**
 
@@ -85,7 +85,7 @@ Used classification reports to evaluate model performance, focusing on:
 
 - OverSampled Test Data:
 
-  | Class          | Precision | Recall | F1-Score | Support |
+| Class          | Precision | Recall | F1-Score | Support |
 |----------------|-----------|--------|----------|---------|
 | 0              | 1.00      | 0.94   | 0.97     | 16574   |
 | 1              | 0.95      | 1.00   | 0.97     | 16333   |
