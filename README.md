@@ -57,6 +57,10 @@ claim_status: Binary classification:
 
 ## Over Sampled Minority Class 
 
+![image](https://github.com/Shaikh-areeb/Insurance_Claim_Prediction-Classification/blob/main/Images/Screenshot%202025-01-06%20192314.png)
+
+## Feature Importances
+
 ![image]()
 
 **Model Training:**
