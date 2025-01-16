@@ -47,11 +47,17 @@ claim_status: Binary classification:
 
 - Applied label encoding to transform categorical variables into numeric format for compatibility with machine learning algorithms.
 
+  ## Class Imbalace
+
   ![images](https://github.com/Shaikh-areeb/Insurance_Claim_Prediction-Classification/blob/main/Images/Screenshot%202025-01-06%20192120.png)
 
 **Handling Imbalance:**
 
 - Used oversampling (resample) on the training data to balance the classes and improve minority class representation.
+
+## Over Sampled Minority Class 
+
+![image]()
 
 **Model Training:**
 
@@ -64,13 +70,6 @@ Built and trained several models, including:
 Selected Random Forest as the best model based on its consistent performance across training and test datasets.
 
 **Evaluation Metrics:**
-
-Used classification reports to evaluate model performance, focusing on:
-
-- Precision
-- Recall
-- F1-Score
-- Overall Accuracy
 
 # Key Results On OverSampled Data
 
@@ -115,22 +114,9 @@ Used classification reports to evaluate model performance, focusing on:
 | **Macro Avg**  | 0.86      | 0.99   | 0.91     | 58592   |
 | **Weighted Avg** | 0.98    | 0.97   | 0.98     | 58592   |
 
-**Overall Metrics:**
+##  Accuracy On Imbalaced Data
 
-- Accuracy: 0.97
-  The model correctly predicts 97% of all cases in the dataset.
-- Macro Average:
-  Precision: 0.86
-  Average precision across both classes. Lowered due to Class 1's precision.
-- Recall: 0.99
-  High recall as both classes have strong recall values.
-- F1-Score: 0.91
-  Balanced performance across both classes.
-- Weighted Average:
-  Weighted by class support, these averages reflect the dominance of Class 0 in the dataset.
-**Precision: 0.99**
-**Recall: 0.97**
-**F1-Score: 0.98**
+![image]()
 
 # Key Insights
 
