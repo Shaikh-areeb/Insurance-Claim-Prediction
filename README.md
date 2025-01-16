@@ -116,7 +116,7 @@ Selected Random Forest as the best model based on its consistent performance acr
 
 ##  Accuracy On Imbalaced Data
 
-![image]()
+![image](https://github.com/Shaikh-areeb/Insurance_Claim_Prediction-Classification/blob/main/Images/Screenshot%202025-01-06%20191824.png)
 
 # Key Insights
 
