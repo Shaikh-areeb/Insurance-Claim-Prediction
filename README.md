@@ -61,7 +61,7 @@ claim_status: Binary classification:
 
 ## Feature Importances
 
-![image]()
+![image](https://github.com/Shaikh-areeb/Insurance_Claim_Prediction-Classification/blob/main/Images/Screenshot%202025-01-06%20192032.png)
 
 **Model Training:**
 
