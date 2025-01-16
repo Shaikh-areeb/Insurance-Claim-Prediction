@@ -47,6 +47,8 @@ claim_status: Binary classification:
 
 - Applied label encoding to transform categorical variables into numeric format for compatibility with machine learning algorithms.
 
+  ![images](https://github.com/Shaikh-areeb/Insurance_Claim_Prediction-Classification/blob/main/Images/Screenshot%202025-01-06%20192120.png)
+
 **Handling Imbalance:**
 
 - Used oversampling (resample) on the training data to balance the classes and improve minority class representation.
